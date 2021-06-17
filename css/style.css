@@ -39,7 +39,7 @@ header:root{
 }
 body{
     background-color: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     color:rgb(255, 255, 255);
 }
 header .container{
@@ -50,7 +50,6 @@ header .container{
 }
 header .logo{
     color: var(--vermelho);
-    font-family: "Arial Black", times;
     font-size: 40px;
     margin-left: 5px;
 }
@@ -65,14 +64,14 @@ header nav a:hover{
 /*filme principal*/
 .first-movie {
     font-size: 16px;
-    background:linear-gradient(rgba(0,0,0, .50),rgba(0,0,0, .50)100%), url(./baby_driver.jpg);
+    background:linear-gradient(rgba(0,0,0, .50),rgba(0,0,0, .50)100%), url(../resources/baby_driver.jpg);
     height: 400px;
     background-size: cover;
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items: flex-start;
-    background: url('./resources/baby_driver.jpg')
+    background: url('../resources/baby_driver.jpg')
 }
 .first-movie .description{
     margin-top: 10px;
@@ -81,7 +80,26 @@ header nav a:hover{
 .title{
     margin-top: 15%;
     font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Gunplay', Arial, sans-serif;
+}
+@font-face {
+    font-family: 'Gunplay';
+    src: url('../css/gunplay\ rg.ttf');
+}
+.classification{
+    display: inline-flex;
+    white-space: nowrap;
+    align-items: center;
+    align-content: center;
+    padding: 0.06em 4px 0.15em 4px !important;
+    border: 1px solid rgb(255,255,255);
+    color: rgb(255,255,255);
+    line-height: 1;
+    border-radius: 2px;
+    margin-right: 7px;
+}
+.stars{
+    margin-top: 10px;
 }
 .button{
     background-color: rgba(0,0,0, .50);
@@ -108,5 +126,5 @@ header nav a:hover{
 }
 .carrossel-movies{
     margin-bottom: 5px;
-
+    margin-top: 5px;
 }
