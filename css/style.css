@@ -9,7 +9,7 @@
 }
 body{
     background-color: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
 }
 header .container{
     display: flex;
@@ -63,16 +63,16 @@ header nav a:hover{
     color: #fff;
 }
 /*filme principal*/
-.first-movie{
+.first-movie {
     font-size: 16px;
-    background:linear-gradient(rgba(0,0,0, .50),rgba(0,0,0, .50)100%), url(/resources/baby_driver.jpg);
+    background:linear-gradient(rgba(0,0,0, .50),rgba(0,0,0, .50)100%), url(./baby_driver.jpg);
+    height: 400px;
     background-size: cover;
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content:center;
     align-items: flex-start;
-    background: url(/resources/baby_driver.jpg);
- 
+    background: url('./resources/baby_driver.jpg')
 }
 .first-movie .description{
     margin-top: 10px;
@@ -106,11 +106,7 @@ header nav a:hover{
 .first-movie .container{
     width:70%;
 }
-header nav a:hover{
-    color: #fff;
-}
-.box-filme{
-    height: 100%;
-    width: 100%;
-    
+.carrossel-movies{
+    margin-bottom: 5px;
+
 }
